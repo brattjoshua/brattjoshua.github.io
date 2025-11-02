@@ -1,3 +1,5 @@
+ Joshua Bratt - CYB-3353-02 System Administration class
+ Project 1 Arch Linux manual install. 
  There was many errors and several erasures and restarts of the entire VM instance and a reversion to a snapshot along the way as well.  
 
 1) I created a obsidian account and intend to sign-up for a student discount (later decided against this as I am using a github.)
