@@ -114,3 +114,10 @@ STARTED WORKING ON PROJECT AGAIN, CHANGED FONT TO ' using setfont /usr/share/kbd
 	3) removed # comment from '%wheel ALL=(ALL:ALL) ALL' as Arch Linux uses the wheel group as the sudo group. 
 21) downloaded and installed 'xorg-server' initially had some issues with the download failing at the end, believe it was due to a need to refresh/resync the package servers.  initially I was using 'pacman -S xorg-server', then I did 'pacman -Sy' to force a resync. I then did 'pacman '-Sy xorg-server' to download, this time the download didn't fail at the end. 
 22) Will be attempting a graphical GDM login interface next. 
+23) installed gdm as user 'josh' using 'sudo pacman -Sy gdm' I was prompted about what repositories to use on 2 different occasions, the first selection I used was 'jack2' repository. I missed the second request I missed and just selected the default choice again. 
+	1) this is a 1.2 Gib install.  install successful, next will be configuring for autorun
+24) installed the GNOME desktop environment using command 'pacman -Sy gnome' after configuration, I will save a snapshot of the VM, and enable autostart. 
+25) adjusting both user default shells for zsh. doing this by going into the vi /etc/passwd file, going to the line with users 'josh' and 'Codi' and changing the end of the line /home/josh: /bin/bash' to 'home/josh: /bin/zsh'
+	1) did the same for user 'Codi' I will perform default or minimal zsh configurations for user 'Codi'
+		1) issue with user name not showing up in terminal when logged in
+		2) 
