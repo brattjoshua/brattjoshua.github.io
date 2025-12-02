@@ -1,0 +1,27 @@
+```
+version: "3.8"
+services:
+ wireguard:
+   image: lscr.io/linuxserver/wireguard:latest
+   container_name: wireguard
+   cap_add:
+     - NET_ADMIN
+     - SYS_MODULE
+   environment:
+     - PUID=1000
+     - PGID=1000
+     - TZ=Etc/UTC
+     - SERVERURL=134.199.206.20 # Replace with your domain or public IP
+     - SERVERPORT=51820
+     - PEERS=2 # Number of clients
+     - PEERDNS=auto
+     - INTERNAL_SUBNET=10.13.13.0/24
+   volumes:
+     - ./config:/config
+     - /lib/modules:/lib/modules
+   ports:
+     - 51820:51820/udp
+   sysctls:
+     - net.ipv4.conf.all.src_valid_mark=1
+   restart: unless-stopped
+```
